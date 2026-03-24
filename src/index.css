@@ -14,6 +14,24 @@ body{
 .font-designer {
   font-family: 'designer', sans-serif;
 }
+.bg-gradient{
+    background: linear-gradient(219.41deg, #04815B 7.96%, #066478 60.64%);
+}
+.gradient-btn {
+  position: relative;
+  border: 1px solid transparent;
+  background:
+    linear-gradient(#F8FFFB, #F8FFFB) padding-box,
+    linear-gradient(219.41deg, #04815B 7.96%, #066478 60.64%) border-box;
+  cursor: pointer;
+}
+
+/* Gradient Text */
+.gradient-btn span {
+  background: linear-gradient(219.41deg, #04815B 7.96%, #066478 60.64%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 @keyframes fade {
   from {
