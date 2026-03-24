@@ -36,7 +36,7 @@ const RecentSales = () => {
 
   return (
     <div className="bg-[#f5f5f5] py-16">
-      <div className="max-w-[1200px] mx-auto px-4">
+      <div className="max-w-[1440px] mx-auto px-[60px]">
         {/* HEADING */}
         <h2 className="text-center text-[35px] font-[#1c1c1c] font-bold tracking-[2px] uppercase font-designer">
           Our Recent Sales
