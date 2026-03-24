@@ -85,11 +85,11 @@ const HowWeWorks = () => {
         </div>
 
         {/* BUTTON */}
-        <div className="mt-10">
+        {/* <div className="mt-10">
           <button className="w-full bg-gradient-to-r from-[#066478] to-[#04815B] text-white py-3 rounded-full font-semibold">
             Browse Properties
           </button>
-        </div>
+        </div> */}
 
       </div>
     </div>
