@@ -1,5 +1,5 @@
 import React from 'react'
-import { FacebookLogo, LinkedinLogoIcon, XLogo, InstagramLogo } from "@phosphor-icons/react";
+import { FacebookLogo, LinkedinLogoIcon, XLogo, InstagramLogo, CaretRight } from "@phosphor-icons/react";
 
 const Footer = () => {
   return (
@@ -81,8 +81,8 @@ const Footer = () => {
                 placeholder="Email Address*"
                 className="w-full bg-transparent outline-none py-2 text-[16px]"
               />
-              <button className="ml-2 w-7 h-6 flex items-center justify-center rounded-full bg-white text-[#FACA51] text-md cursor-pointer border border-transparent transition-all duration-300 hover:bg-transparent hover:border-white">
-                &gt;
+              <button className="ml-2 w-7 h-6 flex items-center justify-center rounded-full bg-white text-[#FACA51] cursor-pointer border border-transparent transition-all duration-300 hover:bg-transparent hover:border-white">
+                <CaretRight size={18} weight="bold" />
               </button>
             </div>
           </div>
