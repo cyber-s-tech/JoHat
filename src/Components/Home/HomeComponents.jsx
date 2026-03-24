@@ -3,6 +3,7 @@ import FeatureProperties from './FeatureProperties'
 import RecentSales from './RecentSales'
 import HowWeWorks from './HowWeWorks'
 import WhoWeAre from './WhoWeAre'
+import FAQSection from './FaqSection'
 
 const HomeComponents = () => {
   return (
@@ -11,6 +12,7 @@ const HomeComponents = () => {
       <FeatureProperties/>
       <HowWeWorks/>
       <RecentSales/>
+      <FAQSection/>
 
     </div>
   )
