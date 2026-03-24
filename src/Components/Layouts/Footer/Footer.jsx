@@ -1,4 +1,5 @@
 import React from 'react'
+import { FacebookLogo, LinkedinLogoIcon, XLogo, InstagramLogo } from "@phosphor-icons/react";
 
 const Footer = () => {
   return (
@@ -51,10 +52,10 @@ const Footer = () => {
           <h3 className="font-designer text-[20px] font-normal mb-4">CONTACT US</h3>
           <a href="tel:+12314272289" className="font-lato text-[16px] font-medium mb-5 block no-underline" target="_blank" rel="noopener noreferrer">+1-231-427-2289</a>
           <a href="mailto:johat1011953@outlook.com" className="font-lato text-[16px] font-medium mb-5 block no-underline" target="_blank" rel="noopener noreferrer">johat1011953@outlook.com</a>
-          <a href="#" className="font-lato text-[16px] font-medium mb-5 block no-underline" target="_blank" rel="noopener noreferrer">james@johatenterises.com</a>
+          <a href="#" className="text-[16px] font-medium mb-5 block no-underline" target="_blank" rel="noopener noreferrer">james@johatenterises.com</a>
 
           <h3 className="font-designer text-[20px] font-normal mb-4">LOCATION</h3>
-          <a href="https://maps.app.goo.gl/x8KZiTNB8iUK2w7B7%22" target="_blank" rel="noopener noreferrer" className="font-lato text-[16px] font-medium no-underline block">
+          <a href="https://maps.app.goo.gl/tCoLd3a9tuKC99aN6" target="_blank" rel="noopener noreferrer" className="font-lato text-[16px] font-medium no-underline block">
             <span className="block">3975 Pulverwoods Rd,</span>
             <span className="block">Williamsburg, MI 49690, USA</span>
           </a>
@@ -63,7 +64,7 @@ const Footer = () => {
         {/* Subscribe */}
         <div>
           <h3 className="font-designer text-[20px] font-normal mb-4">SUBSCRIBE</h3>
-          <p className="font-lato text-[16px] italic font-medium mb-6">
+          <p className="text-[16px] italic font-medium mb-6">
             Sign up for the latest updates and exclusive offers from Johat Enterprises.
           </p>
 
@@ -71,14 +72,14 @@ const Footer = () => {
             <input
               type="text"
               placeholder="Full Name*"
-              className="w-full bg-transparent border-b border-white/50 focus:border-white outline-none py-2 font-lato text-[16px]"
+              className="w-full bg-transparent border-b border-white/50 focus:border-white outline-none py-2 text-[16px]"
             />
 
             <div className="flex items-center border-b border-white/50 focus-within:border-white">
               <input
                 type="email"
                 placeholder="Email Address*"
-                className="w-full bg-transparent outline-none py-2 font-lato text-[16px]"
+                className="w-full bg-transparent outline-none py-2 text-[16px]"
               />
               <button className="ml-2 w-7 h-6 flex items-center justify-center rounded-full bg-white text-[#FACA51] text-md cursor-pointer border border-transparent transition-all duration-300 hover:bg-transparent hover:border-white">
                 &gt;
@@ -100,8 +101,8 @@ const Footer = () => {
       </div>
 
       {/* Bottom */}
-      <div className="max-w-[1440px] mx-auto px-5 md:px-8 lg:px-12 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="font-lato text-[12px] lg:text-[16px] font-medium text-center md:text-left">
+      <div className="max-w-[1440px] mx-auto px-5 md:px-8 lg:px-8 xl:px-[60px] py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p className="text-[12px] lg:text-[16px] font-medium text-center md:text-left">
           © 2026 Johat Enterprises - All Rights Reserved. Designed And Developed By
           <a href="https://ahaansoftware.com/" target="_blank" rel="noopener noreferrer" className="font-extrabold text-[16px] no-underline ml-1">
             AHAAN SOFTWARE CONSULTING
@@ -109,16 +110,27 @@ const Footer = () => {
         </p>
 
         <div className="flex gap-4">
-          {['f', 'x', 'i'].map((icon, i) => (
-            <div key={i} className="w-12 h-12 border border-white/50 rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-110">
-              {icon}
-            </div>
+          {[
+            { icon: <FacebookLogo size={28} />, link: "https://facebook.com" },
+            { icon: <LinkedinLogoIcon size={28} />, link: "https://www.linkedin.com/in/james-taylor-69b20544/" },
+            { icon: <XLogo size={28} />, link: "https://x.com/JohatEnter3002" },
+            { icon: <InstagramLogo size={28} />, link: "https://www.instagram.com/accounts/login/?next=%2Fjohatenterprises%2F&source=omni_redirect" }
+          ].map((item, i) => (
+            <a
+              key={i}
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 border border-white/50 rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-110 no-underline"
+            >
+              {item.icon}
+            </a>
           ))}
         </div>
       </div>
 
       {/* Background Big Text */}
-      <h1 className="relative bottom-[20px] left-0 w-full text-center font-designer font-normal text-white/10 leading-none select-none pointer-events-none text-[30px] md:text-[40px] lg:text-[90px] xl:text-[116px]">
+      <h1 className="relative bottom-[20px] left-0 w-full text-center font-designer font-normal text-white/10 leading-none select-none pointer-events-none text-[30px] md:text-[40px] lg:text-[80px] xl:text-[110px]">
         JOHAT ENTERPRISES
       </h1>
 

@@ -31,8 +31,8 @@ const HowWeWorks = () => {
   const [active, setActive] = useState(0);
 
   return (
-    <div className="bg-[#f5f5f5] py-20">
-      <div className="max-w-[1200px] mx-auto px-4">
+    <div className="bg-[#F4F1ED] py-20">
+      <div className="max-w-[1440px] mx-auto px-5 md:px-8 xl:px-[60px]">
 
         {/* HEADING */}
         <h2 className="text-center text-[35px] font-[#1c1c1c] font-bold tracking-[2px] uppercase font-designer">
@@ -45,12 +45,12 @@ const HowWeWorks = () => {
         </p>
 
         {/* MAIN BOX */}
-        <div className="mt-12 bg-black p-4 rounded-lg relative">
+        <div className="mt-12 bg-black p-[12px] md:p-[15px] xl:p-[26px] relative">
 
           <div className="grid md:grid-cols-2 gap-4">
 
             {/* LEFT IMAGE */}
-            <div className="h-[350px] md:h-[420px] overflow-hidden relative">
+            <div className="h-[350px] md:h-[530px] lg:h-[490px] xl:h-[500px] overflow-hidden relative">
               <img
                 key={active} // 🔥 IMPORTANT FIX
                 src={stepsData[active].image}
@@ -66,18 +66,17 @@ const HowWeWorks = () => {
                 <div
                   key={step.id}
                   onClick={() => setActive(index)}
-                  className={`cursor-pointer px-6 py-4 transition-all duration-300 ${
-                    active === index
-                      ? "bg-white text-black"
-                      : "text-white hover:bg-white/10"
-                  }`}
+                  className={`cursor-pointer px-6 py-4 transition-all duration-300 ${active === index
+                    ? "bg-white text-black"
+                    : "text-white hover:bg-white/10"
+                    }`}
                 >
 
-                  <h3 className="font-bold uppercase text-[15px] tracking-wide">
+                  <h3 className="font-bold uppercase text-[12px] md:text-[13px] lg:text-[20px] xl:text-[23px] tracking-wide font-designer">
                     {step.id}. {step.title}
                   </h3>
 
-                  <p className="text-sm mt-2 leading-relaxed">
+                  <p className="text-md mt-2 leading-relaxed">
                     {step.desc}
                   </p>
 
@@ -92,8 +91,8 @@ const HowWeWorks = () => {
 
         {/* BUTTON */}
         <div className="mt-10">
-          <button className="w-full bg-gradient-to-r from-teal-700 to-green-600 text-white py-3 rounded-full font-semibold">
-            Get Pre-Approved
+          <button className="w-full bg-gradient-to-r from-[#066478] to-[#04815B] text-white py-3 rounded-full font-semibold">
+            Browse Properties
           </button>
         </div>
 
