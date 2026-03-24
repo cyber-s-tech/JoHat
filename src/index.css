@@ -17,7 +17,7 @@ body{
 .bg-gradient{
     background: linear-gradient(219.41deg, #04815B 7.96%, #066478 60.64%);
 }
-.gradient-btn {
+/* .gradient-btn {
   position: relative;
   border: 1px solid transparent;
   background:
@@ -27,11 +27,11 @@ body{
 }
 
 /* Gradient Text */
-.gradient-btn span {
+/* .gradient-btn span {
   background: linear-gradient(219.41deg, #04815B 7.96%, #066478 60.64%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+}  */
 
 @keyframes fade {
   from {

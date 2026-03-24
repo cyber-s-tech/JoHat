@@ -61,9 +61,6 @@ const Header = () => {
 
           {/* RIGHT BUTTONS */}
           <div className="hidden md:flex items-center gap-2 xl:gap-[11px] xl:ml-[188px]">
-            {/* <a href="" className="gradient-btn cursor-pointer py-2.5 px-4 xl:px-[30px] xl:py-[20px] rounded-full">
-              <span>Browse Properties</span>
-            </a> */}
             <a href="" className="text-sm lg:text-base bg-gradient cursor-pointer text-white py-2.5 px-3 xl:px-[30px] xl:py-[20px] rounded-full">
               Browse Properties
             </a>
