@@ -32,10 +32,10 @@ const HowWeWorks = () => {
 
   return (
     <div className="bg-[#F4F1ED] py-20">
-      <div className="max-w-[1440px] mx-auto px-5 md:px-8 xl:px-[60px]">
+      <div className="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-12 xl:px-[60px]">
 
         {/* HEADING */}
-        <h2 className="text-center text-[35px] font-[#1c1c1c] font-bold tracking-[2px] uppercase font-designer">
+        <h2 className="text-center text-xl md:text-[35px] font-[#1c1c1c] font-bold tracking-[2px] uppercase font-designer">
           How We Works
         </h2>
 

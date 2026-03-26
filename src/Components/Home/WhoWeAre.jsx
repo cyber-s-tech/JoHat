@@ -1,4 +1,4 @@
-import React from "react";
+
 import img1 from "../../assets/who-we-are-1.jpg";
 import img2 from "../../assets/who-we-are-2.jpg";
 import img3 from "../../assets/who-we-are-3.jpg";
@@ -6,34 +6,43 @@ import img3 from "../../assets/who-we-are-3.jpg";
 const WhoWeAre = () => {
   return (
     <section className="bg-[#f4f1ee] py-20 lg:py-40 px-4">
-      <div className="max-w-[1440px] mx-auto px-4 lg:px-[60px] relative">
+      <div className="max-w-[1440px] mx-auto px-4 lg:px-15 relative">
 
-        <div className="flex flex-col lg:flex-row gap-10 lg:gap-12 items-center lg:items-start">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-12 items-center md:items-start">
 
           {/* LEFT IMAGE */}
-          <div className="relative flex justify-center">
+          {/* 1. Main Container: Fixed to your SVG's 453:539 aspect ratio */}
+          <div className="relative  w-full max-w-[200px] lg:max-w-[450px] aspect-[453/539] overflow-visible">
+
+            {/* 2. The Kitchen Image: We use padding (p-4) to create that white border look */}
+            <div className="absolute inset-0 p-[5%] lg:p-8">
+              <img
+                src={img1}
+                alt="Modern Kitchen"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* 3. The SVG Frame: Overlaying everything */}
             <img
-              src={img1}
+              src="/svg.svg"
               alt=""
-              className="w-full max-w-[500px] lg:max-h-[555px] border-[3px] border-yellow-400"
+              className="absolute inset-0 w-full h-full pointer-events-none z-10 scale-[1.02]"
             />
 
-            {/* SMALL IMAGE */}
-            <img
-              src={img3}
-              alt=""
-              className="
-                w-20 h-20 lg:w-28 lg:h-28 object-cover absolute
-                -bottom-10 left-1/2 -translate-x-1/2
-                lg:-bottom-20 lg:left-[200px] lg:translate-x-0
-                border-4 border-white shadow-lg
-              "
-            />
+            {/* 4. Small Headshot: Absolute positioned at the bottom right */}
+            <div className="absolute -bottom-6 right-6 lg:-bottom-10 lg:right-10 z-20">
+              <img
+                src={img3}
+                alt="Profile"
+                className="w-24 h-24 lg:w-36 lg:h-36 object-cover border-[6px] border-white shadow-xl"
+              />
+            </div>
           </div>
 
           {/* CENTER CONTENT */}
-          <div className="max-w-[550px] text-center lg:text-left mt-4">
-            <h5 className="uppercase tracking-widest text-[#1c1c1c] font-bold font-designer text-[26px] lg:text-[35px] mb-4">
+          <div className="md:max-w-[300px] lg:max-w-[550px] text-center md:text-left mt-0 lg:mt-4">
+            <h5 className="uppercase tracking-widest text-[#1c1c1c] font-bold font-designer text-xl md:text:2xl lg:text-[35px] mb-4">
               Who We Are
             </h5>
 
@@ -52,16 +61,23 @@ const WhoWeAre = () => {
           </div>
 
         </div>
+        <div className="flex justify-center mt-10 absolute right-[10px] lg:right-[60px]  md:-bottom-0 lg:-bottom-[150px] xl:-bottom-[220px] md:mt-0 w-0 h-0 xl:w-[280px] xl:h-[287px] lg:w-[209px] lg:h-[209px] md:w-[175px] md:h-[175px]">
 
-        {/* RIGHT IMAGE */}
-        <div className="
-          flex justify-center mt-10
-          lg:absolute lg:right-[60px] lg:-bottom-30 lg:mt-0
-        ">
+          {/* 3. THE IMAGE: Inside a wrapper with padding to create the white 'matte' look */}
+          <div className="absolute inset-0 p-4">
+            <img
+              src={img2}
+              alt="Modern House"
+
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* 4. THE SVG FRAME: Matches the 309x316 container exactly */}
           <img
-            src={img2}
+            src="/svg2.svg"
             alt=""
-            className="w-full max-w-[260px] lg:w-[300px] border-[3px] border-yellow-400"
+            className="absolute inset-0 w-full h-full pointer-events-none z-10 scale-[1.01]"
           />
         </div>
 
