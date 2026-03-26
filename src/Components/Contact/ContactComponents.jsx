@@ -1,8 +1,16 @@
-import React from 'react'
+import React from 'react';
+import ContactBanner from './ContactBanner';
+import ContactForm from './ContactForm';
+import ContactMap from './ContactMap';
 
 const ContactComponents = () => {
   return (
-    <div>ContactComponents</div>
+    <div>
+      <ContactBanner/>
+      <ContactForm/>
+      <ContactMap/>
+    </div>
+    
   )
 }
 
