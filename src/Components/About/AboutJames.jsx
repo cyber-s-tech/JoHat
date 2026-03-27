@@ -7,10 +7,10 @@ const AboutJames = () => {
             <div className="max-w-[1440px] mx-auto ">
 
                 {/* MAIN BOX */}
-                <div className="relative bg-[#1C1C1C] max-w-[1440px] px-4 md:px-8 lg:px-12 xl:px-[60px] w-full lg:w-[980px] lg:h-[605px] xl:w-[1200px] py-30 flex flex-col lg:flex-row items-start">
+                <div className="relative bg-[#1C1C1C] px-4 md:px-8 lg:px-12 xl:px-[60px] w-full lg:w-[890px] lg:h-[605px] xl:w-[1000px] py-10 lg:py-30 flex flex-col lg:flex-row items-start">
 
                     {/* LEFT CONTENT */}
-                    <div className="text-white max-w-[700px] pt-6 lg:pt-0">
+                    <div className="text-white lg:max-w-[537px] xl:max-w-[700px] pt-6 lg:pt-0">
 
                         {/* HEADING */}
                         <h2 className="font-designer font-normal text-[22px] md:text-[28px] lg:text-[35px] leading-snug">
@@ -35,10 +35,10 @@ const AboutJames = () => {
                     </div>
 
                     {/* RIGHT IMAGE */}
-                    <div className="relative mt-10 lg:mt-0 lg:absolute lg:right-[-80px] xl:right-[-170px] top-[50px]">
+                    <div className="relative mt-0 lg:mt-0 lg:absolute lg:right-[-85px] xl:right-[-380px] top-[50px]">
 
                         {/* BORDER BOX */}
-                        <div className="relative w-[280px] h-[320px] sm:w-[320px] sm:h-[380px] md:w-[380px] md:h-[450px] lg:w-[458px] lg:h-[513px]
+                        <div className="relative w-[280px] h-[320px] sm:w-[320px] sm:h-[380px] md:w-[380px] md:h-[450px] lg:w-[380px] lg:h-[400px] xl:w-[458px] xl:h-[513px]
     border-[4px] border-[#FACA51] box-border">
 
                             {/* IMAGE WITH INNER SPACING */}

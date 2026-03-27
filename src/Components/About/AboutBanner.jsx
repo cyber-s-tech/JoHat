@@ -3,7 +3,7 @@ import aboutbanner from "../../assets/aboutbanner.webp";
 export default function Hero() {
     return (
         <section
-            className="relative h-[390px] min-[360px]:h-[390px] md:h-[450px] lg:h-[460px] xl:h-[630px] w-full overflow-hidden bg-cover bg-center"
+            className="relative h-[390px] min-[360px]:h-[390px] md:h-[450px] lg:h-[520px] xl:h-[630px] w-full overflow-hidden bg-cover bg-center"
             style={{ backgroundImage: `url(${aboutbanner})` }}
         >
             {/* Overlay (optional for readability) */}

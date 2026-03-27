@@ -1,6 +1,6 @@
 import React from "react";
 // import your image later
-import mainImg from "../../assets/james.png";
+import mainImg from "../../assets/house.png";
 import icon1 from "../../assets/icon1.png";
 import icon2 from "../../assets/icon2.png";
 
@@ -10,7 +10,7 @@ const Who = () => {
       <div className="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-12 xl:px-[60px]">
 
         {/* MAIN FLEX */}
-        <div className="flex flex-col lg:flex-row gap-10 lg:gap-[72px] items-center lg:items-start">
+        <div className="flex flex-col lg:flex-col xl:flex-row gap-10 xl:gap-[72px] items-center lg:items-start">
 
           {/* LEFT IMAGE */}
           <div className="border-[4px] border-[#FACA51] p-[16px_19px] box-border">
@@ -22,15 +22,15 @@ const Who = () => {
           </div>
 
           {/* RIGHT CONTENT */}
-          <div className="flex-1">
+          <div className="flex-1 py-0 xl:py-16">
 
             {/* HEADING */}
-            <h2 className="text-[28px] md:text-[32px] lg:text-[35px] font-normal text-[#333333]">
+            <h2 className="text-[28px] md:text-[32px] lg:text-[35px] font-normal text-[#333333] font-designer">
               WHO WE ARE
             </h2>
 
             {/* DESCRIPTION */}
-            <p className="mt-4 text-[16px] md:text-[17px] lg:text-[18px] text-[#333333] leading-relaxed">
+            <p className="mt-4 text-[16px] md:text-[17px] lg:text-[17px] text-[#333333] leading-relaxed">
               Johat Enterprises is a trusted name in property investment funding
               solutions. Based in Williamsburg, Michigan, we specialize in connecting
               property investors with private lenders who understand their needs.
@@ -54,7 +54,7 @@ const Who = () => {
                 </div>
 
                 {/* TITLE */}
-                <h3 className="text-[18px] md:text-[20px] font-normal text-[#333333]">
+                <h3 className="text-[18px] md:text-[20px] font-normal text-[#333333] font-designer">
                   OUR VISION
                 </h3>
 
@@ -78,7 +78,7 @@ const Who = () => {
                 </div>
 
                 {/* TITLE */}
-                <h3 className="text-[18px] md:text-[20px] font-normal text-[#333333]">
+                <h3 className="text-[18px] md:text-[20px] font-normal text-[#333333] font-designer">
                   OUR MISSION
                 </h3>
 
