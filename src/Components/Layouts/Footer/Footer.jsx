@@ -59,32 +59,37 @@ const Footer = () => {
             <PhoneCallIcon size={24} color="#ededed" weight="fill" />
             +1-231-427-2289/231-459-6853
           </a>
-          <a
-            href="mailto:johat1011953@outlook.com"
-            className="font-lato text-[16px] font-medium mb-5 flex items-center gap-2 no-underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <div className="flex items-start gap-2 mb-5">
+
+            {/* ICON (only once) */}
             <EnvelopeSimpleIcon
               size={24}
               weight="fill"
-              className="text-[#ededed] flex-shrink-0"
+              className="text-[#ededed] flex-shrink-0 mt-[2px]"
             />
-            johat1011953@outlook.com
-          </a>
-          <a
-            href="#"
-            className="text-[16px] font-medium mb-5 flex items-center gap-2 no-underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <EnvelopeSimpleIcon
-              size={24}
-              weight="fill"
-              className="text-[#ededed] flex-shrink-0"
-            />
-            james@johatenterises.com
-          </a>
+
+            {/* TEXTS */}
+            <div className="flex flex-col">
+              <a
+                href="mailto:johat1011953@outlook.com"
+                className="text-[16px] font-medium no-underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                johat1011953@outlook.com
+              </a>
+
+              <a
+                href="mailto:james@johatenterises.com"
+                className="text-[16px] font-medium no-underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                james@johatenterises.com
+              </a>
+            </div>
+
+          </div>
 
           <h3 className="font-designer text-[20px] font-normal mb-4">LOCATION</h3>
           <a
