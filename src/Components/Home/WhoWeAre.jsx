@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { NavLink } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import img1 from "../../assets/who-we-are-1.jpg";
@@ -105,10 +106,11 @@ const WhoWeAre = () => {
               partners who can help our clients acquire, renovate, and sell
               properties for maximum profit.
             </p>
-
-            <a href="/about" className="px-6 py-2 border border-green-800 text-green-800 rounded-full hover:bg-[#066478] hover:text-white transition">
+            <NavLink to="/about">
+            <button  className="cursor-pointer px-6 py-2 border border-green-800 text-green-800 rounded-full hover:bg-[#066478] hover:text-white transition">
               Learn More About Us
-            </a>
+            </button >
+            </NavLink>
           </div>
 
         </div>
