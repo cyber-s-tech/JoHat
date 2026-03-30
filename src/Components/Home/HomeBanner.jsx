@@ -72,7 +72,7 @@ export default function Hero() {
             Contact Us
           </a>
 
-          <a className="animate-btn text-white py-2.5 px-4 lg:px-[30px] lg:py-[20px] rounded-full text-center text-xs min-[375px]:text-base">
+          <a href="/#feature-properties" className="animate-btn text-white py-2.5 px-4 lg:px-[30px] lg:py-[20px] rounded-full text-center text-xs min-[375px]:text-base">
             Browse Properties
           </a>
         </div>
