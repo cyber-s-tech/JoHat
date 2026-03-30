@@ -124,7 +124,7 @@ useEffect(() => {
             </p>
           </div>
           <div ref={(el) => (leftItemsRef.current[1] = el)} className="py-20 space-y-9 text-base ">
-              <a href="tel:+123 456 7890" className="flex gap-[25px]"><PhoneCallIcon size={24} color="#ededed" weight="fill" /> +123 456 7890</a>
+              <a href="tel:+1 2314596853/2314272289" className="flex gap-[25px]"><PhoneCallIcon size={24} color="#ededed" weight="fill" /> +1   2314596853 / 2314272289</a>
               <a href="mailto:johat1o11953@outlook.com" className="flex gap-[25px]"><EnvelopeSimpleIcon size={24}  color="#ededed" weight="fill"/> johat1o11953@outlook.com<br/>james@johatenterises.com</a>
               <a href="https://maps.app.goo.gl/tCoLd3a9tuKC99aN6" className="flex gap-[25px]"><MapPinIcon size={24} color="#ededed" weight="fill" /> 3975 Pulverwoods Rd, Williamsburg, MI <br/>49690, USA</a>
             </div>

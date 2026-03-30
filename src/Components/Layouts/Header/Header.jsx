@@ -1,9 +1,12 @@
 
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate, useLocation } from "react-router-dom";
+
 import logo from "../../../assets/logo.png";
 const Header = () => {
   const [open, setOpen] = useState(false);
+ const navigate = useNavigate();
+const location = useLocation();
 
   return (
     <>
@@ -61,9 +64,19 @@ const Header = () => {
 
           {/* RIGHT BUTTONS */}
           <div className="hidden md:flex items-center gap-2 xl:gap-[11px] xl:ml-[188px]">
-            <a href="" className="text-sm lg:text-base animate-btn cursor-pointer text-white py-2.5 px-3 xl:px-[30px] xl:py-[20px] rounded-full">
+            <button onClick={() => {
+    if (location.pathname === "/") {
+      // already on home → just scroll
+      const section = document.getElementById("feature-properties");
+      section?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      // go to home with hash
+      navigate("/#feature-properties");
+    }
+    setOpen(false);
+  }} className="text-sm lg:text-base animate-btn cursor-pointer text-white py-2.5 px-3 xl:px-[30px] xl:py-[20px] rounded-full">
               Browse Properties
-            </a>
+            </button>
           </div>
 
           {/* MOBILE MENU BUTTON */}
@@ -92,7 +105,7 @@ const Header = () => {
               className={({ isActive }) =>
                 isActive
                   ? "px-[20px] py-[10px] bg-[#C7FFEE] "
-                  : "px-[20px] py-[10px] bg-transparent text-white"
+                  : "px-[20px] py-[10px] bg-transparent text-white hover:text-[#C7FFEE]"
               }
             >Home</NavLink>
           <NavLink
@@ -100,7 +113,7 @@ const Header = () => {
               className={({ isActive }) =>
                 isActive
                   ? "px-[20px] py-[10px] bg-[#C7FFEE]"
-                  : "px-[20px] py-[10px] bg-transparent text-white"
+                  : "px-[20px] py-[10px] bg-transparent text-white hover:text-[#C7FFEE]"
               }
             >About</NavLink>
          <NavLink
@@ -108,7 +121,7 @@ const Header = () => {
               className={({ isActive }) =>
                 isActive
                   ? "px-[20px] py-[10px] bg-[#C7FFEE]"
-                  : "px-[20px] py-[10px] bg-transparent text-white"
+                  : "px-[20px] py-[10px] bg-transparent text-white hover:text-[#C7FFEE]"
               }
             >Services</NavLink>
             <NavLink
@@ -116,12 +129,22 @@ const Header = () => {
               className={({ isActive }) =>
                 isActive
                   ? "px-[20px] py-[10px] bg-[#C7FFEE]"
-                  : "px-[20px] py-[10px] bg-transparent text-white"
+                  : "px-[20px] py-[10px] bg-transparent text-white hover:text-[#C7FFEE]"
               }
             >Contact Us</NavLink>
 
           
-          <button className="mx-6 animate-btn text-white px-[20px] py-[12px] rounded-full">
+          <button onClick={() => {
+    if (location.pathname === "/") {
+      // already on home → just scroll
+      const section = document.getElementById("feature-properties");
+      section?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      // go to home with hash
+      navigate("/#feature-properties");
+    }
+    setOpen(false);
+  }} className="mx-6 animate-btn text-white px-[20px] py-[12px] rounded-full">
             Browse Properties
           </button>
         </div>

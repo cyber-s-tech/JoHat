@@ -68,7 +68,7 @@ export default function Hero() {
           ref={buttonsRef}
           className="flex md:items-center md:justify-center gap-2.5 flex-wrap mt-3"
         >
-          <a className="border-flow relative overflow-hidden border border-white py-2.5 px-4 lg:px-[30px] lg:py-[20px] rounded-full text-center text-xs min-[375px]:text-base z-1">
+          <a href="/contact" className="border-flow relative overflow-hidden border border-white py-2.5 px-4 lg:px-[30px] lg:py-[20px] rounded-full text-center text-xs min-[375px]:text-base z-1">
             Contact Us
           </a>
 
