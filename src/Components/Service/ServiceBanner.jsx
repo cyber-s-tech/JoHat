@@ -47,7 +47,7 @@ const ServiceBanner = () => {
       <div className="absolute inset-0 flex flex-col gap-3 md:gap-5 justify-center lg:justify-end md:items-center md:text-center text-white px-6 pt-20 lg:py-[100px] lg:pb-[100px]">
         {/* Subtitle */}
         <p ref={subtitleRef}className="text-sm min-[360px]:text-base md:text-[22px] font-bold leading-tight tracking-wide md:text-center">
-          our services
+          OUR SERVICES
         </p>
 
         {/* Title */}

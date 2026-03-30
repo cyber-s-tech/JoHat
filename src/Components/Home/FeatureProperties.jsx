@@ -67,7 +67,7 @@ const FeatureProperties = () => {
   cardsRef.current = [];
 
   return (
-    <div ref={sectionRef} className="bg-[#f5f5f5] py-16">
+    <div id="feature-properties" ref={sectionRef} className="bg-[#f5f5f5] py-16">
       <div className="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-12 xl:px-[60px]">
 
         {/* HEADING */}

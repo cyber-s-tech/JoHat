@@ -106,9 +106,9 @@ const WhoWeAre = () => {
               properties for maximum profit.
             </p>
 
-            <button className="px-6 py-2 border border-green-800 text-green-800 rounded-full hover:bg-black hover:text-white transition">
+            <a href="/about" className="px-6 py-2 border border-green-800 text-green-800 rounded-full hover:bg-[#066478] hover:text-white transition">
               Learn More About Us
-            </button>
+            </a>
           </div>
 
         </div>
