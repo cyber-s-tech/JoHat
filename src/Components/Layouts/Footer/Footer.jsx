@@ -22,12 +22,12 @@ const Footer = () => {
 
         {/* Links */}
         <div>
-          <ul className="space-y-4 font-lato text-[16px] font-medium">
+          <ul className="space-y-4 text-[16px] font-medium">
             {[
-              { name: 'Home', link: '#' },
-              { name: 'About Us', link: '#' },
-              { name: 'Services', link: '#' },
-              { name: 'Contact Us', link: '#' }
+              { name: 'Home', link: '/' },
+              { name: 'About Us', link: '/about' },
+              { name: 'Services', link: '/service' },
+              { name: 'Contact Us', link: '/contact' }
             ].map((item, i) => (
               <li key={i}>
                 <a
@@ -190,10 +190,10 @@ const Footer = () => {
 
         <div className="flex gap-4">
           {[
-            { icon: <FacebookLogo size={28} />, link: "https://facebook.com" },
-            { icon: <LinkedinLogoIcon size={28} />, link: "#" },
-            { icon: <XLogo size={28} />, link: "#" },
-            { icon: <InstagramLogo size={28} />, link: "#" }
+            { icon: <FacebookLogo size={28} />, link: "https://facebook.com" }, 
+            { icon: <LinkedinLogoIcon size={28} />, link: "https://www.linkedin.com/in/james-taylor-69b20544/" }, 
+            { icon: <XLogo size={28} />, link: "https://x.com/JohatEnter3002" }, 
+            { icon: <InstagramLogo size={28} />, link: "https://www.instagram.com/accounts/login/?next=%2Fjohatenterprises%2F&source=omni_redirect" }
           ].map((item, i) => (
             <a
               key={i}
