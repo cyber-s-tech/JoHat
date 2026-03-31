@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import HowImg from "../../assets/how1.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 const stepsData = [
@@ -6,7 +7,7 @@ const stepsData = [
     id: 1,
     title: "Submit Your Application",
     desc: "Fill out a quick and simple form to tell us about your investment goals and financial needs.",
-    image: "https://images.unsplash.com/photo-1556740749-887f6717d7e4",
+    image: HowImg,
   },
   {
     id: 2,

@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import todayImg1 from "../../assets/today1.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -7,7 +8,7 @@ const stepsData = [
     id: 1,
     title: "VIRTUAL TOUR",
     desc: "We guide you through the full application process — from preparing documents to submitting your request to the right private lender.",
-    image: "https://images.unsplash.com/photo-1556740749-887f6717d7e4",
+    image: todayImg1,
   },
   {
     id: 2,
