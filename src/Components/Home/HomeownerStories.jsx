@@ -50,7 +50,7 @@ const HomeownerStories = () => {
   }, []);
 
   return (
-    <section className="bg-[#F4F1ED] py-24">
+    <section className="bg-[#F4F1ED] py-6 md:py-12 lg:py-24">
       <div className="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-12 xl:px-[60px] overflow-hidden">
 
         {/* TITLE */}
@@ -60,9 +60,9 @@ const HomeownerStories = () => {
 
         <div className=" mb-[55px] w-full">
           <img
-  src="/linesvg.svg"
-  className="w-full h-auto"
-/>
+            src="/linesvg.svg"
+            className="w-full h-auto"
+          />
         </div>
 
         <Swiper
@@ -79,46 +79,46 @@ const HomeownerStories = () => {
                 {/* 1. PARENT: Explicitly set the "Stage" size */}
                 <div className="relative w-full max-w-[571px] min-h-[150px] md:min-h-[350px] lg:min-h-[420px] xl:min-w-[600px] aspect-[15/16]">
 
-  {/* Image */}
-  <div className="p-3 lg:p-5 w-full h-full">
-    <img
-      src={item.clientImg}
-      alt="client"
-      className="w-full h-full object-cover block rounded-sm shadow-sm"
-    />
-  </div>
+                  {/* Image */}
+                  <div className="p-3 lg:p-5 w-full h-full">
+                    <img
+                      src={item.clientImg}
+                      alt="client"
+                      className="w-full h-full object-cover block rounded-sm shadow-sm"
+                    />
+                  </div>
 
-  {/* SVG frame */}
-  <img
-    src="/aboutsvg.svg"
-    alt=""
-    className="absolute inset-0 w-full h-full pointer-events-none z-10 object-fill"
-  />
+                  {/* SVG frame */}
+                  <img
+                    src="/aboutsvg.svg"
+                    alt=""
+                    className="absolute inset-0 w-full h-full pointer-events-none z-10 object-fill"
+                  />
 
-</div>
+                </div>
                 {/* RIGHT CONTENT */}
                 <div>
 
                   {/* PROPERTY IMAGE */}
                   <div className="relative w-full aspect-[16/8.5] mb-[44px] box-border">
-  
-  {/* Image wrapper */}
-  <div className="p-3 w-full h-full">
-    <img
-      src={item.propertyImg}
-      alt="property"
-      className="w-full h-full object-cover"
-    />
-  </div>
 
-  {/* SVG overlay */}
-  <img
-    src="/propertysvg.svg"
-    alt=""
-    className="absolute inset-0 w-full h-full pointer-events-none z-10"
-  />
+                    {/* Image wrapper */}
+                    <div className="p-3 w-full h-full">
+                      <img
+                        src={item.propertyImg}
+                        alt="property"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
 
-</div>
+                    {/* SVG overlay */}
+                    <img
+                      src="/propertysvg.svg"
+                      alt=""
+                      className="absolute inset-0 w-full h-full pointer-events-none z-10"
+                    />
+
+                  </div>
 
                   {/* DESCRIPTION */}
                   <p className="text-[#333333] font-normal leading-[28px] text-[18px] mb-6">

@@ -179,7 +179,7 @@ useEffect(() => {
         </div>
 
             {/* RIGHT */}
-            <div className="bg-white py-[60px] px-10 px-4 md:px-8 lg:pl-10 lg:pr-10 xl:pl-[50px] xl:pr-[112px]">
+            <div className="bg-white py-[60px] px-0 md:px-10 px-4 md:px-8 lg:pl-10 lg:pr-10 xl:pl-[50px] xl:pr-[112px]">
               <form
                 onSubmit={handleSubmit(onSubmitForm)}
                 className="grid grid-cols-1 md:grid-cols-2 gap-[40px]"
