@@ -144,8 +144,8 @@ useEffect(() => {
       <a href="mailto:johat1o11953@outlook.com">
         johat1o11953@outlook.com
       </a>
-      <a href="mailto:james@johatenterises.com">
-        james@johatenterises.com
+      <a href="mailto:james@johatenterprises.com">
+        james@johatenterprises.com
       </a>
     </div>
   </div>

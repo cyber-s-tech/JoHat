@@ -61,8 +61,8 @@ const required = { required: "This field is required" };
               johat1o11953@outlook.com
             </a>
 
-            <a href="mailto:james@johatenterises.com" className="text-decoration-none text-xl md:text-2xl lg:text-[28px] font-bold break-words">
-              james@johatenterises.com
+            <a href="mailto:james@johatenterprises.com" className="text-decoration-none text-xl md:text-2xl lg:text-[28px] font-bold break-words">
+              james@johatenterprises.com
             </a>
 
             <a href="https://maps.app.goo.gl/tCoLd3a9tuKC99aN6" className="text-decoration-none text-base md:text-lg text-gray-600 leading-relaxed">

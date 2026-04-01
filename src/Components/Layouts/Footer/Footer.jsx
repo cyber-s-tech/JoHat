@@ -96,10 +96,10 @@ const Footer = () => {
                 johat1011953@outlook.com
               </a>
               <a
-                href="mailto:james@johatenterises.com"
+                href="mailto:james@johatenterprises.com"
                 className="text-[16px] font-medium no-underline"
               >
-                james@johatenterises.com
+                james@johatenterprises.com
               </a>
             </div>
           </div>
